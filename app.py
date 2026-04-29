@@ -12,6 +12,9 @@ app = Flask(__name__)
 # Enable CORS for all routes, allowing the frontend at port 3001
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
+print("MedHelp AI Backend Initializing...")
+
+
 # NVIDIA NIM configuration
 NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY", "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")
 client = OpenAI(
